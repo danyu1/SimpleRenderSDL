@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file working",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-std=c++17",
+                "-fdiagnostics-color=always",
+                "-g",
+                "-IC:/Users/danie/OneDrive/Desktop/SDL2-2.28.1/include", // SDL include path
+                "${file}",
+                "-LC:/Users/danie/OneDrive/Desktop/SDL2-2.28.1/lib/x64", // SDL library path
+                "-lSDL2",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: C:\\MinGW\\bin\\g++.exe",
+            "dependsOn": "configureSDL"
+        },
+        {
+            "label": "configureSDL",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/C",
+                "echo Configuring SDL...",
+                "echo SDL configured successfully."
+            ],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
