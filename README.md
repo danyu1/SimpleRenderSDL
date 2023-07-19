@@ -1,5 +1,7 @@
 # SimpleRenderSDL
 
+For all those struggling to set up their first SDL project.
+
 ## SDL VERSION
 
 SDL verision 2.28.1
