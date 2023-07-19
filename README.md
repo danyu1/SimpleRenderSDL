@@ -1,6 +1,6 @@
 # SimpleRenderSDL
 
-For all those struggling to set up their first SDL project.
+For all those struggling to set up their first SDL project on windows 11 and newest Visual Study code with Json settings.
 
 ## SDL VERSION
 
